@@ -50,6 +50,9 @@ displayImage(BlackWhite);
 % the new color should be 255 - old_color
 % write code HERE and store in NEG matrix
 
+neg1 = negative(A);
+figure(4);
+displayImage(neg1);
 % enable HERE the figure3
 % ..
 % show NEG image HERE
