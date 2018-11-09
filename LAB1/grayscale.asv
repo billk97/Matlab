@@ -1,0 +1,24 @@
+function GRAY = grayscale(IMG)
+%enas tropos na prastheso ta 3 xrometa kai meta /3 \
+%enas allos tropos me bari px perisotero kokino
+
+% get the width and height of the image
+[height, width, ~] = size(IMG);
+
+% convert image to grayscale using custom code
+%GRAY = rgb2gray(IMG);
+for y = 1:height
+    for x = 1:width
+        % the image is in RGB format
+        % convert the RGB pixel to an single value grayscale pixel
+        % conversion function = 0.25 * red + 0.5 * green + 0.25 * blue;
+        % write here the matlab code
+        % ..
+        %()<---- gia na exeis prosbash se ena keli
+        GRAY(Y,X,1) = 0.25*IMG(y,c,1);
+        GRAY(Y,X,1) = 0.25*IMG(y,X,1);
+        GRAY(Y,X,1) = 0.25*IMG(y,x,1);
+    end
+end
+
+end
